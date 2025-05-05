@@ -1,100 +1,230 @@
+/* === GENERAL === */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #d4af37 0%, #fff3b0 100%);
+  color: #333; /* texte foncé plus lisible sur clair */
+}
 
-    
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+/* === HEADER === */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #100f0f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
-    header {
-      background: #ffffff45;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    
-    header img {
-      max-width: 150px; /* adapte la taille du logo */
-      margin-bottom: 1rem;
-    }
-    
-    body {
-      background-color: #f5f5f5;
-      background-image: url("img/louis.jpg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover; /* ou 'cover' si tu veux qu’il prenne toute la surface */
-      min-height: 100vh; /* pour s'assurer que le body prend toute la hauteur de la fenêtre */
-      color: #222;
-      line-height: 1.6;
-    }
-    
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #5d05eb;
-      padding: 1rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      font-style: italic;
-    }
+header img {
+  width: 160px;
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.3));
+  border-radius: 50%;
+}
 
-    nav a:hover {
-      color:#d7d630;
-      text-decoration: underline;
+header p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #f4f2f2;
+}
+
+/* === NAVIGATION === */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #ffffff;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #d4af37, #6e44ff);
+  transition: width 0.3s;
+  margin: auto;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* === HERO === */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url("img/code.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Correction ici */
+  background-position: center; /* Pour bien centrer l'image */
+  color: #333;
+}
+
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #fcf7f7;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fdf8f8;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* === SECTIONS === */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #dcbe28;
+  border-bottom: 2px solid #d4af37;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* === CONTACT FORM === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 15px;
+  border: 1px solid #d4af37;
+  background: #fafafa;
+  color: #333;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+form button {
+  padding: 15px;
+  border: none;
+  background: linear-gradient(90deg, #d4af37, #6e44ff);
+  color: #0b0b0b;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 2px solid #d4af37;
+  background-color: #f5f5f5;
+  margin-top: 60px;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+/* === SOCIAL ICONS === */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px transparent;
+}
+
+.social-icons a img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d4af37;
+  background: linear-gradient(90deg, #fff3b0, #cfc3ff);
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  nav {
+      flex-direction: column;
+      gap: 15px;
   }
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-      font-style: italic;
-    }
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-image: url("img/rain.webp");
-      color: #fff;
-    }
-    .hero h2 {
+
+  .hero h1 {
       font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    .services, .about, .contact {
-      background:#ffffffa8;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .footer {
-      text-align: center;
-      background: #000;
-      color: #fff;
-      padding: 1rem;
-      font-style: italic;
-    }
-    form input, form textarea {
-      display: block;
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      background: #000;
-      color: #fff;
-      padding: 0.7rem 2rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-style: italic;
-    }
-    form button:hover {
-      color:#d7d630;
-      text-decoration: underline;
   }
-  
+
+  .hero p {
+      font-size: 1rem;
+  }
+}
+ /* === SMOOTH SCROLL === */
+html {
+  scroll-behavior: smooth;
+}
+
+

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://NGMAaron.github.io/site-khansugroup/sitemap.xml
+Sitemap: https://khansugroup.netlify.app/sitemap.xml
