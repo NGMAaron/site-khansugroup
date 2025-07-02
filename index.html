@@ -1,18 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirection en fonction de la langue</title>
-  <script>
-    const userLang = navigator.language || navigator.userLanguage;
-    if (userLang.startsWith('en')) {
-      window.location.href = 'en.html'; // ou 'index-en.html'
-    } else {
-      window.location.href = 'fr.html'; // ou 'index-fr.html'
-    }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Khansu Group - Création de sites web professionnels, hébergement rapide, et optimisation Google à petit prix.">
+<meta name="keywords" content="site web, création site vitrine, hébergement, SEO, Khansu Group, Gabon, site professionnel">
+<meta name="author" content="Ngomo Aaron">
+<meta name="robots" content="index, follow">
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <title>Khansu Group</title>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="img/Khansu.png" alt="Logo Khansu Group">
+    <p>Développeur Web | PHP | Frontend & Backend</p>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Je crée des sites web performants & élégants</h1>
+    <p>Je transforme vos idées en solutions numériques concrètes, modernes et accessibles.</p>
+  </section>
+
+  <section id="services" class="services">
+  <h2>Mes Offres</h2>
+  <div class="offer-cards">
+
+    <div class="offer-box">
+      forfait essentiel <br>
+      170 000 FCFA
+      <div class="details">
+        <p>Site vitrine moderne, 5 pages<br></p>
+        <p>Design professionnel<br></p>
+        <p>Intégration réseaux sociaux<br></p>
+        <p>Domaine attribué <br></p>
+        Optimisation SEO minimum
+      </div>
+    </div>
+
+    <div class="offer-box">
+      forfait pro <br>
+      270 000 FCFA
+      <div class="details">
+        <p>Tout le contenu du forfait essentiel<br></p>
+        <p>jusqu'à 10 pages <br></p>
+        <p>Fonctionnalités supérieures (carte GPS intégrée,formulaire de contact) <br></p>
+        Optimisation SEO avancée
+      </div>
+    </div>
+
+     <div class="offer-box">
+      Hébergement + maintenance
+      <div class="details">
+        <p>18 000 FCFA / mois<br></p>
+        200 000 FCFA / an<br>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <h2>À propos de moi</h2>
+    <div class="about-container">
+      <img src="img/moi.jpg" alt="Photo de Ngomo Aaron">
+      <div class="about-text">
+        <p>Je suis Ngomo Aaron, passionné de développement web et fondateur de Khansu Group. Mon objectif est simple : concevoir des solutions web solides, esthétiques et durables. Je travaille avec précision, écoute et passion, pour donner vie à chaque projet.</p>
+        <p>Langages : HTML, CSS, JavaScript, PHP, MySQL<br>Outils : Git, VS Code, Figma, WebSocket, API REST</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h2>Me contacter</h2>
+    <form action="https://formspree.io/f/xkgbeglv" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre e-mail" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <section id="clients" class="clients">
+  <h2>Ils nous ont fait confiance</h2>
+  <div class="client-logos">
+    <img src="img/archi.jpg" alt="Entreprise 1">
+    <img src="img/cao.jpg" alt="Entreprise 2">
+    <img src="img/logo.jpg" alt="Entreprise 3">
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Ngomo Aaron. Tous droits réservés.</p>
+    <p>Localisation: Gabon, Libreville Okala/Finam</p>
+    <p>Tel : +241 074800092</p>
+    <div class="social-icons">
+      <a href="https://wa.me/233534290351" target="_blank"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp"></a>
+      <a href="https://www.facebook.com/share/16UxoKKzqR/" target="_blank"><img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/khansugroup" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram"></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
-</html>
