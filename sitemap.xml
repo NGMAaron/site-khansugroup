@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://khansugroup.netlify.app/</loc>
+    <loc>https://khansugroup.com/</loc>
     <lastmod>2025-04-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://khansugroup.netlify.app/#services</loc>
+    <loc>https://khansugroup.com/#services</loc>
   </url>
   <url>
-    <loc>https://khansugroup.netlify.app/#about</loc>
+    <loc>https://khansugroup.com/#about</loc>
   </url>
   <url>
-    <loc>https://khansugroup.netlify.app/#contact</loc>
+    <loc>https://khansugroup.com/#contact</loc>
   </url>
 </urlset>
